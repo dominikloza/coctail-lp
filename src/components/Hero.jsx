@@ -7,7 +7,6 @@ import { useMediaQuery } from 'react-responsive'
 const Hero = () => {
 
     const videoRef = useRef();
-    const videoTimelineRef = useRef();
 
     const isMobile = useMediaQuery({ maxWidth: 767 })
 
@@ -71,7 +70,7 @@ const Hero = () => {
         <>
             <section id='hero' className='noisy' >
                 <h1 className='title overflow-hidden'>
-                    {'ESSENCE'.split('').map((char, index) => (
+                    {'classy'.toUpperCase().split('').map((char, index) => (
                         <span
                             key={index}
                             className={'text-gradient manual-char'}
