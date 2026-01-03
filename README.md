@@ -1,16 +1,45 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Cocktail Bar - The Fifth Sense
 
-Currently, two official plugins are available:
+The Fifth Sense is a premium, high-end cocktail bar landing page designed to evoke a sensory experience. The project focuses on immersive visual storytelling, showcasing the bar's unique atmosphere and signature drinks through sophisticated animations and a sleek, dark aesthetic.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Live: [https://coctail-lp.vercel.app/]
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Immersive Visual Experience: A modern, dark-themed design that reflects the luxurious ambiance of a high-end cocktail lounge.
+- Advanced GSAP Animations: Smooth, scroll-triggered reveals and staggered element animations that guide the user through the bar's story.
+- Dynamic Drink Showcase: An elegant presentation of the menu, highlighting signature cocktails with high-quality imagery.
+- Fully Responsive: Optimized for a seamless experience across all devices, from desktop monitors to mobile screens.
+- High Performance: Lightning-fast load times and smooth interactions thanks to the Vite build tool.
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React**: Component-based architecture for a scalable and maintainable codebase.
+- **GSAP**: Powering the complex, high-performance scroll animations and cinematic transitions
+- **Tailwind CSS**: A utility-first CSS framework used to create a custom, polished design with a focus on typography and spacing.
+- **Vite**: A modern build tool for fast development and optimized production builds.
+
+
+
+## Installation
+
+To get started with this project locally, follow these steps:
+
+**1. Clone the repository**:
+```bash
+git clone https://github.com/yourusername/iphone-product-page.git
+```
+**2. Navigate to the project directory:**:
+```bash
+cd iphone-product-page
+```    
+**3. Install dependencies**:
+```bash
+npm install
+```
+**4. Install dependencies**:
+```bash
+npm run dev
+```
+**5. Open your browser and navigate to http://localhost:3000 to view the project.**
