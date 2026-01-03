@@ -15,8 +15,8 @@ const Art = () => {
             scrollTrigger: {
                 trigger: '#art',
                 start: start,
-                end: 'bottom center',
-                scrub: 3,
+                end: '+=1000',
+                scrub: 1.5,
                 pin: true,
 
             },
@@ -29,26 +29,27 @@ const Art = () => {
         })
             .to('.masked-img', {
                 scale: 1.3,
-                maskePosition: 'center',
+                maskPosition: 'center',
                 maskSize: '400%',
-                duration: 1,
-                ease: "power1.inOut"
-            })
-            .to('#masked-content', {
-                opacity: 1,
-                duration: 2,
+                duration: 8,
                 ease: "power1.inOut"
             })
             .from('.cup-right', {
                 xPercent: 300,
                 ease: "power1.inOut",
                 duration: 2,
-            }, '-=3')
+            })
             .from('.cup-left', {
                 xPercent: -300,
                 ease: "power1.inOut",
                 duration: 2,
-            }, '-=3')
+            }, '<')
+            .to('#masked-content', {
+                opacity: 1,
+                duration: 2,
+                ease: "power1.inOut"
+            })
+
     });
 
     return (
