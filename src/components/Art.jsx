@@ -27,23 +27,35 @@ const Art = () => {
             stagger: 0.2,
             ease: "power1.inOut",
         })
-        .to('.masked-img', {
-            scale: 1.3,
-            maskePosition: 'center',
-            maskSize: '400%',
-            duration: 1,
-            ease: "power1.inOut"
-        })
-        .to('#masked-content', {
-            opacity: 1,
-            duration: 2,
-            ease: "power1.inOut"
-        });
+            .to('.masked-img', {
+                scale: 1.3,
+                maskePosition: 'center',
+                maskSize: '400%',
+                duration: 1,
+                ease: "power1.inOut"
+            })
+            .to('#masked-content', {
+                opacity: 1,
+                duration: 2,
+                ease: "power1.inOut"
+            })
+            .from('.cup-right', {
+                xPercent: 300,
+                ease: "power1.inOut",
+                duration: 2,
+            }, '-=3')
+            .from('.cup-left', {
+                xPercent: -300,
+                ease: "power1.inOut",
+                duration: 2,
+            }, '-=3')
     });
 
     return (
         <div id='art'>
-            <div className='container mx-auto h-full pt-20'>
+            <div className='container mx-auto h-full pt-20 relative'>
+                <img src="/images/drink1.png" alt="" className='hidden md:block absolute bottom-45 right-0 w-50 cup-right rotate-350' />
+                <img src="/images/drink3.png" alt="" className='hidden md:block absolute top-45 left-0 w-45 cup-left rotate-10' />
                 <h2 className='will-fade'>The ART</h2>
                 <div className='content'>
                     <ul className='space-y-4 will-fade'>

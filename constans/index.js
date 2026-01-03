@@ -135,7 +135,7 @@ const sliderLists = [
         image: "/images/drink1.png",
         title: "Simple Ingredients, Bold Flavor",
         description:
-            "Made with tequila, lime juice, and orange liqueur, the Margarita is easy to make and full of character. Add a salted rim for the perfect drink on summer nights.",
+            "Crafted with white rum, fresh lime juice, mint leaves, and a touch of sugar, the Mojito is a timeless symbol of freshness. Top with sparkling soda and muddled mint for the ultimate revitalizing experience.",
     },
     {
         id: 2,
@@ -151,15 +151,15 @@ const sliderLists = [
         image: "/images/drink3.png",
         title: "Simple Ingredients, Bold Flavor",
         description:
-            "Made with tequila, lime juice, and orange liqueur, the Margarita is easy to make and full of character. Add a salted rim for the perfect drink on summer nights.",
+            "Featuring gin, violet liqueur, and a splash of lemon, the Violet Breeze is a delicate floral masterpiece. Shake well and serve in a chilled glass for a sophisticated drink that captures the essence of spring.",
     },
     {
         id: 4,
-        name: "Curacao Mojito",
+        name: "Blue Curacao",
         image: "/images/drink4.png",
         title: "Crafted With Care, Poured With Love",
         description:
-            "Each cocktail is made with fresh ingredients and a passion for perfecting every pour, whether you're celebrating or simply relaxing.",
+            "Combining vodka, Blue Curaçao, and lemonade, this vibrant cocktail is as refreshing as it is striking. Serve over crushed ice with a slice of lemon to bring a tropical breeze to your glass.",
     },
 ];
 

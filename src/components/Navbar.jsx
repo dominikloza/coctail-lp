@@ -6,13 +6,13 @@ const Navbar = () => {
     useGSAP(() => {
         const navTween = gsap.timeline({
             scrollTrigger: {
-                trigger: 'nav',
+                trigger: '#nav',
                 start: 'bottom top',
 
             }
         })
 
-        navTween.fromTo('nav', {
+        navTween.fromTo('#nav', {
             backgroundColor: 'transparent'
         }, {
             backgroundColor: '#00000050',
@@ -22,9 +22,9 @@ const Navbar = () => {
         });
     }, [])
     return (
-        <nav>
+        <nav id='nav'>
             <div>
-                <a href="#home" className='flex items-center gap-2'>
+                <a href="#hero" className='flex items-center gap-2'>
                     <img src="/images/logo.png" alt="" className=' size-14 md:size-20' />
                     <div className='flex flex-col justify-center gap-1'> <p>The Fifth Sense</p>
                         <p className='text-sm font-sans '>Cocktail Experience</p></div>
