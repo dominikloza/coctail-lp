@@ -3,6 +3,20 @@ import { navLinks } from '../../constans'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 const Navbar = () => {
+
+    const handleScroll = (e, id) => {
+        e.preventDefault();
+        
+        gsap.to(window, {
+            duration: 1.5,
+            scrollTo: {
+                y: `#${id}`,
+                offsetY: 100 
+            },
+            ease: "power3.inOut"
+        });
+    };
+
     useGSAP(() => {
         const navTween = gsap.timeline({
             scrollTrigger: {
@@ -32,7 +46,8 @@ const Navbar = () => {
                 </a>
 
                 <ul>
-                    {navLinks.map((el) => (<li className='' key={el.id}><a href={`#${el.id}`}>{el.title}</a></li>))}
+                    {navLinks.map((el) => (<li className='' key={el.id}><a href={`#${el.id}`} 
+                            onClick={(e) => handleScroll(e, el.id)}>{el.title}</a></li>))}
                 </ul>
             </div>
         </nav>
